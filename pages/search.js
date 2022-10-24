@@ -11,7 +11,7 @@ import noresult from '../assets/images/noresult.svg';
 const Search = ({ properties }) => {
     const [searchFilters, setSearchFilters] = useState(false);
     const router = useRouter();
-
+    
     return (
         <Box>
             <Flex
