@@ -48,7 +48,6 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
                     {amenities.length && <Text fontSize="xl" fontWeight="black" marginTop="5" marginBottom="5">Amenities</Text>}
                     <Flex flexWrap="wrap">
                         {amenities.map(item => {
-                            console.log(item)
                             return item.amenities.map(amenity => {
                                 return <Text
                                     key={amenity.text}
