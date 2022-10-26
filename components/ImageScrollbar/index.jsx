@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import Document from "next/document";
 import Image from "next/image";
 import { Box, Icon, Flex } from "@chakra-ui/react";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
@@ -42,8 +41,8 @@ const ImageScrollbar = ({ data }) => {
             {data.map(item => {
                 return <Box key={item.id} width="910px" itemID={item.id} overflow="hidden" p="1">
                     <Image
-                        onMouseOver={() => disableBodyScroll(Document)}
-                        onMouseOut={() => enableBodyScroll(Document)}
+                        onMouseOver={() => disableBodyScroll(true)}
+                        onMouseOut={() => enableBodyScroll(true)}
                         placeholder="blur"
                         blurDataURL={item.url}
                         src={item.url}
